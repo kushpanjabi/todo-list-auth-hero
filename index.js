@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 if (process.env.NODE_ENV === 'production') {
     //server static content
-    //npm run build
+    //npm runbuild
     app.use(express.static(path.join(__dirname, 'client/build')));
 }
 
