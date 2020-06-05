@@ -1,4 +1,4 @@
-CREATE DATABASE authtodolist;
+-- CREATE DATABASE authtodolist;
 
 -- users
 
@@ -18,7 +18,7 @@ CREATE TABLE todos(
     description VARCHAR(255) NOT NULL,
     PRIMARY KEY (todo_id),       
     FOREIGN KEY (user_id) REFERENCES users(user_id)
-)
+);
 
 -- fake user data
 INSERT INTO users (user_name, user_email, user_password) values ('kush', 'kush@gmail.com', 'kushy');
